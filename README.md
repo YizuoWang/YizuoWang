@@ -1,2 +1,2 @@
-# yw_sznyc
+# YizuoWang
 Blog
