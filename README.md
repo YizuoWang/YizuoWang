@@ -1,0 +1,2 @@
+# yw_sznyc
+Blog
