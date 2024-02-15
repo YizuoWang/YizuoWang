@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        /* Reset default margin and padding */
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+    /* Navigation Styles */
+    .nav-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center; /* Center-align the items horizontally */
+    }
+
+    .nav-button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        color: #878686; /* Grey text color */
+        text-decoration: none;
+        font-family: Constantia, serif;
+        border-radius: 5px; /* Rounded corners */
+    }
+
+    /* Additional Styles */
+    .body {
+        font-family: 'Times New Roman', Times, serif, sans-serif; /* Fallback font */
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        color: #333; /* White text color for the header */
+        padding: 20px 20px 20px 40px;
+    }  
+    
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+    /* About Me Styles */
+#about {
+    display: flex;
+    padding: 20px;
+    background-image: url('https://i.postimg.cc/gJD4ct56/DSC08004.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Required for stacking content on top */
+}
+
+#about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.372)); /* Adjust the gradient as needed */
+    z-index: 1; /* Place the gradient layer above the image */
+}
+
+#about-text {
+    flex:0.8; /* 3/4 of the available width */
+    padding: 35px;
+    color: #ffffffb5; /* Grey text color */
+    z-index: 2; /* Place the text above the gradient layer */
+}
+
+#about-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+#about-image {
+    flex: 1; /* 1/4 of the available width */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    z-index: 2; /* Place the image above the gradient layer */
+}
+
+#about-image img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto;
+    border-radius: 5px;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Yizuo Wang</h1>
+        <nav>
+            <ul class="nav-list">
+                <a class="nav-button" href="Photography.html">Photography</a>
+                <a class="nav-button" href="#articles">Articles</a>
+                <a class="nav-button" href="About me.html">About Me</a>
+                <a class="nav-button" href="Contact.html">Contact Me</a>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div id="about-text">
+            <p>Hailing from Shenzhen, I've embarked on a odyssey of self-discovery.</p>
+            <br>
+            <p>A pivotal chapter in my journey unfolded 2022 summer when I ventured into the bustling heart of New York City. It marked a profound milestone in my 23-year adventure. Amidst the vibrant chaos of this metropolis, I endeavored to comprehend the beauty of diversity and the significance of inclusion. I discovered that each person carries their own unique story, and I resolved to create my own narrative.</p>
+            <br>
+            <p>I began to embrace the art of living in the present moment—braving rainy days without an umbrella, becoming a regular patron of opera, ballet, and concerts with rush tickets, and randomly boarding the nearest train. These cherished moments make me feel alive in the world.</p>
+            <br>
+            <p>In the blink of an eye, I find myself capturing stories.</p>
+            <br>
+            <p>And now, I'm here.</p>
+            <br>
+            <p>"Cogito ergo sum" — René Descartes</p>
+            <br> 
+            <p>Yizuo Wang</p>
+            <p>New York City</p>
+    </section>
+
+    <footer>
+        <p>&copy; Copyright Yizuo Wang<br>© 2024 All rights reserved.</p>
+    </footer>
+</body>
+</html>

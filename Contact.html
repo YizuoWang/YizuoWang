@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        /* Reset default margin and padding */
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+    /* Navigation Styles */
+    .nav-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center; /* Center-align the items horizontally */
+    }
+
+    .nav-button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        color: #878686; /* Grey text color */
+        text-decoration: none;
+        font-family: Constantia, serif;
+        border-radius: 5px; /* Rounded corners */
+    }
+
+    #contact-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#contact-form textarea {
+    resize: vertical;
+}
+
+#contact-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #666;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+
+    /* Additional Styles */
+    .body {
+        font-family: 'Times New Roman', Times, serif, sans-serif; /* Fallback font */
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        color: #333; /* White text color for the header */
+        padding: 20px 20px 20px 40px;
+    }  
+    
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Yizuo Wang</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a class="nav-button" href="Photography.html">Photography</a></li>
+                <li><a class="nav-button" href="#articles">Articles</a></li>
+                <li><a class="nav-button" href="About me.html">About Me</a></li>
+                <li><a class="nav-button" href="Contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact-form">
+        <form action="Contact.py" method="POST">
+            <label for="first_name">First Name *</label>
+            <input type="text" id="first_name" name="first_name" required>
+
+            <label for="last_name">Last Name *</label>
+            <input type="text" id="last_name" name="last_name" required>
+
+            <label for="email_address">Email Address *</label>
+            <input type="email" id="email_address" name="email_address" required>
+
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Copyright Yizuo Wang <br> © 2024 All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <style>
+        /* Reset default margin and padding */
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+    /* Navigation Styles */
+    .nav-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center; /* Center-align the items horizontally */
+    }
+
+    .nav-button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        color: #878686; /* Grey text color */
+        text-decoration: none;
+        font-family: Constantia, serif;
+        border-radius: 5px; /* Rounded corners */
+    }
+
+    /* Additional Styles */
+    .body {
+        font-family: 'Times New Roman', Times, serif, sans-serif; /* Fallback font */
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        color: #333; /* White text color for the header */
+        padding: 20px 20px 20px 40px;
+    }  
+    
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+=
+
+        /* Photography Page Styles */
+        #photo-container {
+            width: 100%;
+            max-width: 1000px; /* Adjust the maximum width as needed */
+            margin: 0 auto;
+            overflow: hidden; /* Hide overflowing content */
+            position: relative;
+        }
+
+        #photo-slideshow {
+            white-space: nowrap; /* Keep photos in a single line */
+            animation: scroll 20s linear infinite; /* Scroll animation */
+        }
+
+        .photo {
+            display: inline-block;
+            width: 300px; /* Adjust the width of each photo */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 10px; /* Adjust the spacing between photos */
+            vertical-align: middle;
+        }
+
+        /* Keyframe animation for scrolling */
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%); /* Scroll to the left */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Yizuo Wang</h1>
+        <nav>
+            <ul class="nav-list">
+                <a class="nav-button" href="Photography.html">Photography</a>
+                <a class="nav-button" href="#articles">Articles</a>
+                <a class="nav-button" href="About me.html">About Me</a>
+                <a class="nav-button" href="Contact.html">Contact Me</a>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="photography">
+        <h2 style="text-align: center;">ICELAND</h2>
+        <div id="photo-container">
+            <div id="photo-slideshow">
+                <!-- Add your photos here -->
+                <img class="photo" src="https://i.postimg.cc/HkXRDRQT/1.jpg" alt="Photo 1">
+                <img class="photo" src="https://i.postimg.cc/j28jZzrQ/2.jpg" alt="Photo 2">
+                <img class="photo" src="https://i.postimg.cc/FKvq9pZ3/3.jpg" alt="Photo 3">
+                <img class="photo" src="https://i.postimg.cc/hvnbmZX1/4.jpg" alt="Photo 4">
+                <img class="photo" src="https://i.postimg.cc/nc2b6Zhx/6.jpg" alt="Photo 6">
+                <img class="photo" src="https://i.postimg.cc/j2TmFkVC/7.jpg" alt="Photo 7">
+                <img class="photo" src="https://i.postimg.cc/Vk27hHn1/8.jpg" alt="Photo 8">
+                <img class="photo" src="https://i.postimg.cc/9fTxHtY9/9.jpg" alt="Photo 9">
+                <img class="photo" src="https://i.postimg.cc/j28c48tp/10.jpg" alt="Photo 10">
+                <!-- Add more photos as needed -->
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+
+    <section id="photography">
+        <div id="photo-container">
+            <div id="photo-slideshow">
+                <!-- Add your photos here -->
+                <img class="photo" src="https://i.postimg.cc/zGLz5yrs/18.jpg" alt="Photo 1">
+                <img class="photo" src="https://i.postimg.cc/FzZRf8Ww/12.jpg" alt="Photo 2">
+                <img class="photo" src="https://i.postimg.cc/02krg5rv/13.jpg" alt="Photo 3">
+                <img class="photo" src="https://i.postimg.cc/HkKL7QzW/14.jpg" alt="Photo 4">
+                <img class="photo" src="https://i.postimg.cc/DZcF5srX/19.jpg" alt="Photo 5">
+                <img class="photo" src="https://i.postimg.cc/VvDfsM58/16.jpg" alt="Photo 6">
+                <img class="photo" src="https://i.postimg.cc/VsRLFygV/17.jpg" alt="Photo 7">
+                <img class="photo" src="https://i.postimg.cc/25s3g4L9/11.jpg" alt="Photo 8">
+                <img class="photo" src="https://i.postimg.cc/gJbkgm1f/15.jpg" alt="Photo 9">
+        </div>
+    </section>
+
+    <br><br><br>
+
+    <footer>
+        <p>&copy; 
+            Copyright Yizuo Wang <br>
+            © 2024 All rights reserved.</p>
+    </footer>
+</body>
+</html>

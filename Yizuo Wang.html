@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yizuo Wang</title>
+    <style>
+        /* Reset default margin and padding */
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+    /* Navigation Styles */
+    .nav-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center; /* Center-align the items horizontally */
+    }
+
+    .nav-button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        color: #878686; /* Grey text color */
+        text-decoration: none;
+        font-family: Constantia, serif;
+        border-radius: 5px; /* Rounded corners */
+    }
+
+    /* Additional Styles */
+    .body {
+        font-family: 'Times New Roman', Times, serif, sans-serif; /* Fallback font */
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        color: #333; /* White text color for the header */
+        padding: 20px 20px 20px 40px;
+    }  
+    
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+
+    /* Style the photo container */
+    #photo-container {
+        width: 100%;
+        max-width: 600px; /* Adjust the maximum width as needed */
+        margin: 0 auto;
+        overflow: hidden; /* Hide overflowing content */
+    }
+
+    /* Style the photo slideshow */
+    #photo-slideshow {
+        display: flex; /* Create a horizontal flex container */
+        transition: transform 1s ease-in-out; /* Smooth transition effect */
+    }
+
+    /* Style individual photos */
+    .photo {
+        flex: 0 0 100%; /* Each photo takes up 100% of the container width */
+        max-width: 100%; /* Ensure photos don't exceed the container width */
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Yizuo Wang</h1>
+        <nav>
+            <ul class="nav-list">
+                <a class="nav-button" href="Photography.html">Photography</a>
+                <a class="nav-button" href="#articles">Articles</a>
+                <a class="nav-button" href="About me.html">About Me</a>
+                <a class="nav-button" href="Contact me.html">Contact Me</a>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="photography">
+        <h2 style="text-align: center;">ICELAND</h2>
+        <div id="photo-container">
+            <div id="photo-slideshow">
+                <img class="photo" src="https://i.postimg.cc/HkXRDRQT/1.jpg" alt="Photo 1">
+                <img class="photo" src="https://i.postimg.cc/j28jZzrQ/2.jpg" alt="Photo 2">
+                <img class="photo" src="https://i.postimg.cc/FKvq9pZ3/3.jpg" alt="Photo 3">
+                <img class="photo" src="https://i.postimg.cc/hvnbmZX1/4.jpg" alt="Photo 4">
+                <img class="photo" src="https://i.postimg.cc/m2by2qfb/5.jpg" alt="Photo 5">
+                <!-- Add more photos as needed -->
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript for the photo slideshow
+        const slideshow = document.getElementById('photo-slideshow');
+        let currentIndex = 0;
+
+        function nextPhoto() {
+            currentIndex = (currentIndex + 1) % 5; // Adjust the number based on the number of photos
+            slideshow.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        setInterval(nextPhoto, 3000); // Change photo every 3 seconds (adjust as needed)
+    </script>
+
+    <br><br><br><br>
+
+    <footer>
+        <p>&copy; 
+            Copyright Yizuo Wang <br>
+            © 2023 All rights reserved.</p>
+    </footer>
+</body>
+</html>
